@@ -1,10 +1,10 @@
 # VitaCreate AI 🎥
 
+> **Status: planned.** This repository currently holds the project plan only. No application code has been published here yet, so the features below describe what is intended, not what exists.
+
 **AI-powered faceless content creation & automation platform** for YouTube, Instagram Reels & Shorts.
 
 Scale your content output without ever showing your face. Built with Flutter + Firebase + powerful AI integration.
-
-![VitaCreate Preview](https://via.placeholder.com/800x450?text=Add+your+app+screenshots+here)
 
 ## Why VitaCreate AI?
 
@@ -17,15 +17,15 @@ Content creators waste hours on repetitive tasks. VitaCreate AI automates:
 
 Perfect for faceless channels in motivation, facts, tech, finance, or education niches.
 
-## Key Features
+## Planned features
 
-- ✅ AI script & content idea generator (powered by Grok)
-- ✅ Smart title, description & hashtag generator
-- ✅ Thumbnail text & concept suggestions
-- ✅ Content calendar & batch creation
-- ✅ Multi-platform support (YouTube + Instagram)
-- ✅ Analytics insights & performance tracking
-- ✅ One-click export to CapCut / editing tools
+- [ ] AI script & content idea generator (powered by Grok)
+- [ ] Smart title, description & hashtag generator
+- [ ] Thumbnail text & concept suggestions
+- [ ] Content calendar & batch creation
+- [ ] Multi-platform support (YouTube + Instagram)
+- [ ] Analytics insights & performance tracking
+- [ ] One-click export to CapCut / editing tools
 
 ## Tech Stack
 
@@ -35,7 +35,7 @@ Perfect for faceless channels in motivation, facts, tech, finance, or education 
 - Riverpod / Clean Architecture
 - Local caching & offline support
 
-## Getting Started
+## Getting Started (once code is published)
 
 ```bash
 git clone https://github.com/sachin1024-92/vitacreate-ai.git
@@ -69,8 +69,6 @@ If you want to see this tool grow and stay accessible, consider sponsoring:
 [![Sponsor](https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-blue?logo=github&style=for-the-badge)](https://github.com/sponsors/sachin1024-92)
 
 Other ways:
-- [Buy Me a Coffee](https://www.buymeacoffee.com/)
-- [Ko-fi](https://ko-fi.com/)
 
 ## License
 MIT
