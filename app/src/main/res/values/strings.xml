@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FloatNote</string>
+    <string name="tile_label">Floating note</string>
+    <string name="untitled">Untitled</string>
+    <string name="back">Back</string>
+
+    <string name="bubble_title">Floating bubble</string>
+    <string name="bubble_off">Float a notepad over any app. It autosaves as you type.</string>
+    <string name="bubble_on">Floating now. Tap it to write, fling it to an edge, or drop it on ✕ to hide.</string>
+    <string name="bubble_description">FloatNote bubble. Double-tap to open the notepad.</string>
+    <string name="dismiss_description">Drop here to hide the bubble</string>
+
+    <string name="your_notes">Your notes</string>
+    <string name="action_search">Search notes</string>
+    <string name="search_hint">Search your notes</string>
+    <string name="search_empty_title">No matching notes</string>
+    <string name="search_empty_message">Try a different word.</string>
+    <string name="pinned">Pinned</string>
+    <string name="note_pinned">Pinned to the top. Long-press again to unpin.</string>
+    <string name="note_unpinned">Unpinned</string>
+    <string name="capture_label">Save to FloatNote</string>
+    <string name="capture_saved">Saved to FloatNote</string>
+    <string name="capture_empty">Nothing to save</string>
+    <string name="empty_title">No notes yet</string>
+    <string name="empty_message">Tap New note, or turn on the floating bubble and start typing anywhere.</string>
+    <string name="note_deleted">Note deleted</string>
+    <string name="undo">Undo</string>
+    <string name="not_now">Not now</string>
+
+    <string name="hint_title">Title</string>
+    <string name="hint_body">Start typing. Everything saves automatically.</string>
+    <string name="status_typing">Saving…</string>
+    <string name="status_saved">✓ Saved</string>
+    <string name="note_index">Note %1$d of %2$d</string>
+    <string name="note_index_new">New note</string>
+    <plurals name="word_count">
+        <item quantity="one">%d word</item>
+        <item quantity="other">%d words</item>
+    </plurals>
+    <string name="copied">Copied</string>
+
+    <string name="action_new">New note</string>
+    <string name="action_previous">Newer note</string>
+    <string name="action_next">Older note</string>
+    <string name="action_copy">Copy</string>
+    <string name="action_share">Share</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_open_app">Open in app</string>
+    <string name="action_minimize">Minimize</string>
+    <string name="action_float">Float this note</string>
+
+    <string name="delete_title">Delete this note?</string>
+    <string name="delete_message">This can’t be undone.</string>
+
+    <string name="overlay_permission_title">Allow the floating bubble</string>
+    <string name="overlay_permission_message">FloatNote needs the “Display over other apps” permission to show its note bubble on top of other apps. It is only used to draw the bubble and notepad you turn on. Your notes stay on this device and are never sent anywhere.</string>
+    <string name="overlay_permission_grant">Open settings</string>
+
+    <string name="channel_name">Floating bubble</string>
+    <string name="channel_description">Shown while the floating notepad bubble is on screen.</string>
+    <string name="notification_title">FloatNote is floating</string>
+    <string name="notification_text">Tap to open your note</string>
+    <string name="notification_open_app">Open app</string>
+    <string name="notification_hide">Hide bubble</string>
+
+    <string name="support_title">Support FloatNote</string>
+    <string name="support_pitch">FloatNote is free forever, with no ads, no tracking and no account. If it makes your day easier, you can chip in to keep it growing. Supporters unlock extra bubble colours as a thank-you.</string>
+    <string name="support_is_supporter">💛 You’re a supporter. Thank you!</string>
+    <string name="support_not_yet">Pick any amount, once. No subscriptions.</string>
+    <string name="support_loading">Loading support options…</string>
+    <string name="support_store_only">Support options appear when FloatNote is installed from Google Play.</string>
+    <string name="support_donate">Donate</string>
+    <string name="support_tier">%1$s · %2$s</string>
+    <string name="support_colors_title">Bubble colour</string>
+    <string name="support_locked">Become a supporter to unlock this colour.</string>
+    <string name="support_promise">Every feature stays free. Supporting only adds cosmetic extras.</string>
+    <string name="support_no_browser">No browser found to open the donation page.</string>
+    <string name="support_unavailable">Google Play billing isn’t available on this device.</string>
+    <string name="support_pending">Payment pending. Perks unlock once it completes.</string>
+    <string name="support_thanks">Thank you for supporting FloatNote! Colours unlocked.</string>
+    <string name="support_failed">The purchase didn’t go through. Please try again.</string>
+</resources>

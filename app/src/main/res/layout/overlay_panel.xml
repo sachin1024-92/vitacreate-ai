@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.github.sachin102492.floatnote.overlay.OverlayRootLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:id="@+id/panel_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/panel_bg"
+        android:elevation="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/panel_header"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/amber"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="14dp"
+            android:paddingEnd="2dp">
+
+            <ImageView
+                android:id="@+id/header_icon"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_edit"
+                android:tint="@color/ink" />
+
+            <TextView
+                android:id="@+id/note_index"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/ink"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/btn_prev"
+                style="@style/OverlayHeaderButton"
+                android:contentDescription="@string/action_previous"
+                android:src="@drawable/ic_chevron_left" />
+
+            <ImageButton
+                android:id="@+id/btn_next"
+                style="@style/OverlayHeaderButton"
+                android:contentDescription="@string/action_next"
+                android:src="@drawable/ic_chevron_right" />
+
+            <ImageButton
+                android:id="@+id/btn_new"
+                style="@style/OverlayHeaderButton"
+                android:contentDescription="@string/action_new"
+                android:src="@drawable/ic_add" />
+
+            <ImageButton
+                android:id="@+id/btn_copy"
+                style="@style/OverlayHeaderButton"
+                android:contentDescription="@string/action_copy"
+                android:src="@drawable/ic_copy" />
+
+            <ImageButton
+                android:id="@+id/btn_open"
+                style="@style/OverlayHeaderButton"
+                android:contentDescription="@string/action_open_app"
+                android:src="@drawable/ic_open" />
+
+            <ImageButton
+                android:id="@+id/btn_minimize"
+                style="@style/OverlayHeaderButton"
+                android:contentDescription="@string/action_minimize"
+                android:src="@drawable/ic_minimize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/panel_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="8dp">
+
+            <EditText
+                android:id="@+id/note_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/hint_title"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences"
+                android:maxLines="1"
+                android:paddingVertical="8dp"
+                android:textColor="@color/panel_text"
+                android:textColorHint="@color/panel_hint"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/panel_divider" />
+
+            <EditText
+                android:id="@+id/note_body"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="top|start"
+                android:hint="@string/hint_body"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine|textCapSentences"
+                android:lineSpacingMultiplier="1.15"
+                android:paddingVertical="10dp"
+                android:scrollbars="vertical"
+                android:textColor="@color/panel_text"
+                android:textColorHint="@color/panel_hint"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:id="@+id/save_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/panel_accent_text"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/note_stats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/panel_hint"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+</io.github.sachin102492.floatnote.overlay.OverlayRootLayout>

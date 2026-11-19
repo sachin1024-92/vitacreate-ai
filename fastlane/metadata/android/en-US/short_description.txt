@@ -1,0 +1,1 @@
+A free notepad bubble that floats over any app and autosaves as you type.

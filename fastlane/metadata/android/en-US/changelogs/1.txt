@@ -1,0 +1,1 @@
+First release: floating notepad bubble with autosave, spring physics, edge tucking, magnetic dismiss, Quick Settings tile.

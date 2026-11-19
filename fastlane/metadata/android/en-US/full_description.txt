@@ -1,0 +1,24 @@
+FloatNote puts a notepad bubble on top of every app. Tap it, type, and tap away. Every keystroke is saved automatically.
+
+<b>Floats over everything</b>
+• Chat-head style bubble you can drag anywhere
+• Fling it and it springs to the nearest edge with physics-based motion
+• When idle it tucks itself half off-screen and fades, out of your way
+• Drag it onto the ✕ target (it snaps in magnetically) to hide it
+
+<b>Autosave, always</b>
+• No save button: notes save as you type
+• Switch between notes, start a new one, or copy a note from the bubble
+• Pop any note out of the app into the floating notepad
+
+<b>Quick access</b>
+• Quick Settings tile to toggle the bubble
+• Notification shortcut to open your note
+
+<b>Private by design</b>
+• Your notes never leave your device, and there is no account
+• One small banner ad on the notes list, never in the bubble or while you type
+• Free and open source (MIT)
+
+<b>Support the project (optional)</b>
+• Every feature is free. Leave a one-time tip of any size to remove the ad for good and unlock extra bubble colours

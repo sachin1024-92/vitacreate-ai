@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationContentDescription="@string/back"
+        app:navigationIcon="@drawable/ic_arrow_back" />
+
+    <EditText
+        android:id="@+id/editor_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="@string/hint_title"
+        android:importantForAutofill="no"
+        android:inputType="textCapSentences"
+        android:maxLines="1"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="8dp"
+        android:textAppearance="?attr/textAppearanceHeadlineSmall" />
+
+    <EditText
+        android:id="@+id/editor_body"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="top|start"
+        android:hint="@string/hint_body"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine|textCapSentences"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="8dp"
+        android:scrollbars="vertical"
+        android:textAppearance="?attr/textAppearanceBodyLarge" />
+</LinearLayout>

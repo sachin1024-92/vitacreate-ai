@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:contentDescription="@string/bubble_description"
+    android:padding="6dp">
+
+    <ImageView
+        android:id="@+id/bubble_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bubble_bg"
+        android:elevation="6dp"
+        android:importantForAccessibility="no"
+        android:padding="14dp"
+        android:src="@drawable/ic_edit"
+        android:tint="@color/ink" />
+</FrameLayout>

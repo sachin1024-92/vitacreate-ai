@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <ImageView
+        android:id="@+id/dismiss_circle"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:background="@drawable/dismiss_bg"
+        android:contentDescription="@string/dismiss_description"
+        android:elevation="4dp"
+        android:padding="18dp"
+        android:src="@drawable/ic_close"
+        android:tint="@android:color/white" />
+</FrameLayout>

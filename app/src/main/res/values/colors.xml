@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand -->
+    <color name="amber">#FFC940</color>
+    <color name="amber_light">#FFDC73</color>
+    <color name="amber_deep">#FFA800</color>
+    <color name="ink">#1F1B2E</color>
+    <color name="launcher_background">#1F1B2E</color>
+
+    <!-- Floating panel -->
+    <color name="panel_bg">#FFFDF6</color>
+    <color name="panel_text">#1F1B13</color>
+    <color name="panel_hint">#8A8272</color>
+    <color name="panel_divider">#1F1F1B13</color>
+    <color name="panel_accent_text">#7A5900</color>
+
+    <!-- Material 3 scheme (amber seed) -->
+    <color name="m3_primary">#7A5900</color>
+    <color name="m3_on_primary">#FFFFFF</color>
+    <color name="m3_primary_container">#FFDEA3</color>
+    <color name="m3_on_primary_container">#261900</color>
+    <color name="m3_secondary">#6B5D3F</color>
+    <color name="m3_on_secondary">#FFFFFF</color>
+    <color name="m3_secondary_container">#F5E0BB</color>
+    <color name="m3_on_secondary_container">#241A04</color>
+    <color name="m3_tertiary">#4A6547</color>
+    <color name="m3_surface">#FFF8F1</color>
+    <color name="m3_on_surface">#1F1B13</color>
+    <color name="m3_on_surface_variant">#4D4639</color>
+    <color name="m3_outline">#7F7667</color>
+    <color name="m3_surface_container_lowest">#FFFFFF</color>
+    <color name="m3_surface_container_low">#FBF2E5</color>
+    <color name="m3_surface_container">#F5ECDF</color>
+    <color name="m3_surface_container_high">#EFE7DA</color>
+    <color name="m3_surface_container_highest">#E9E1D4</color>
+</resources>

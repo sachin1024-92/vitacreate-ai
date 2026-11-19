@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Play build: one banner ad on the notes list, removed for supporters. -->
+    <string name="support_pitch">FloatNote is free, with one small ad on the notes list and no account. If it makes your day easier, you can chip in to keep it growing. Supporters remove the ad for good and unlock extra bubble colours as a thank-you.</string>
+    <string name="support_promise">Every feature stays free. Supporting removes the ad and adds cosmetic extras.</string>
+    <string name="support_thanks">Thank you for supporting FloatNote! Ad removed and colours unlocked.</string>
+</resources>
