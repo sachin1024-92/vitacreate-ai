@@ -1,14 +1,10 @@
 name: FloatNote Android
 
-# Standalone FloatNote repo (was nested under daily-motivation-ai)
-
 on:
   push:
-    branches: ['**']
+    branches: [main]
     tags: ['floatnote-v*']
   pull_request:
-    paths:
-            - '.github/workflows/floatnote.yml'
   workflow_dispatch:
 
 permissions:
@@ -20,9 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       PLAY_SERVICE_ACCOUNT_JSON: ${{ secrets.PLAY_SERVICE_ACCOUNT_JSON }}
-    defaults:
-      run:
-        
+
     steps:
       - uses: actions/checkout@v4
 
@@ -49,7 +43,6 @@ jobs:
           FLOATNOTE_KEYSTORE_PASSWORD: ${{ secrets.FLOATNOTE_KEYSTORE_PASSWORD }}
           FLOATNOTE_KEY_ALIAS: ${{ secrets.FLOATNOTE_KEY_ALIAS }}
           FLOATNOTE_KEY_PASSWORD: ${{ secrets.FLOATNOTE_KEY_PASSWORD }}
-          # Optional. Without these the build uses Google's test ad IDs.
           ADMOB_APP_ID: ${{ secrets.ADMOB_APP_ID }}
           ADMOB_BANNER_ID: ${{ secrets.ADMOB_BANNER_ID }}
         run: ./gradlew --no-daemon assemblePlayDebug assemblePlayRelease bundlePlayRelease assembleFossRelease lintPlayDebug
@@ -65,14 +58,14 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: FloatNote-${{ github.run_number }}
-          path: floating-notepad/dist/*
+          path: dist/*
           retention-days: 30
 
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: FloatNote-lint-${{ github.run_number }}
-          path: floating-notepad/app/build/reports/lint-results-playDebug.html
+          path: app/build/reports/lint-results-playDebug.html
           if-no-files-found: ignore
 
       - name: Publish GitHub release
@@ -80,19 +73,17 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            floating-notepad/dist/FloatNote.apk
-            floating-notepad/dist/FloatNote-foss.apk
-            floating-notepad/dist/FloatNote.aab
+            dist/FloatNote.apk
+            dist/FloatNote-foss.apk
+            dist/FloatNote.aab
 
-      # Uploads tagged releases to Play's internal testing track as a draft. Needs a Play
-      # Console service account JSON key in the PLAY_SERVICE_ACCOUNT_JSON secret.
       - name: Upload to Google Play (internal track)
         if: startsWith(github.ref, 'refs/tags/floatnote-v') && env.PLAY_SERVICE_ACCOUNT_JSON != ''
         uses: r0adkll/upload-google-play@v1
         with:
           serviceAccountJsonPlainText: ${{ secrets.PLAY_SERVICE_ACCOUNT_JSON }}
           packageName: io.github.sachin102492.floatnote
-          releaseFiles: floating-notepad/dist/FloatNote.aab
+          releaseFiles: dist/FloatNote.aab
           track: internal
           status: draft
-          whatsNewDirectory: floating-notepad/fastlane/metadata/android/en-US/whatsnew
+          whatsNewDirectory: fastlane/metadata/android/en-US/whatsnew

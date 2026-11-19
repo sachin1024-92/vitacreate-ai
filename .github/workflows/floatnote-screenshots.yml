@@ -1,14 +1,6 @@
 name: FloatNote store screenshots
 
-# Boots an Android emulator, installs the ad-free FOSS debug build, fills it with sample
-# notes and captures Play Store screenshots. The PNGs are committed to the
-# `floatnote-screenshots` branch (never to main) so they can be reviewed and uploaded.
 on:
-  push:
-    branches: ['claude/floatnote-*']
-    paths:
-      - '**'
-      - '.github/workflows/floatnote-screenshots.yml'
   workflow_dispatch:
 
 permissions:
@@ -29,7 +21,7 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
 
       - name: Build FOSS debug APK (no ads)
-                run: ./gradlew --no-daemon assembleFossDebug
+        run: ./gradlew --no-daemon assembleFossDebug
 
       - name: Enable KVM
         run: |
